@@ -1,0 +1,138 @@
+/*Mobile first Ansatz*/
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: black;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+footer {
+  position: sticky;
+  bottom: 0px;
+  z-index: 100;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 95px;
+  /*
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, max-content);
+  margin: 10vw 10vw;
+  background-color: rgb(58, 56, 56);
+  width: max-content;
+  */
+}
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 85vw;
+}
+.img-container > .img-source {
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.img-source:nth-child(1) {
+  background-image: url("assets/student-1.jpeg");
+}
+
+.img-source:nth-child(2) {
+  background-image: url("assets/student-2.jpeg");
+}
+
+.img-source:nth-child(3) {
+  background-image: url("assets/student-3.jpeg");
+}
+
+.img-source:nth-child(4) {
+  background-image: url("assets/student-4.jpeg");
+}
+
+.img-source:nth-child(5) {
+  background-image: url("assets/student-5.jpeg");
+}
+
+.img-source:nth-child(6) {
+  background-image: url("assets/student-6.jpeg");
+}
+.img-source:nth-child(7) {
+  background-image: url("assets/student-7.jpeg");
+}
+
+.img-source:nth-child(8) {
+  background-image: url("assets/student-8.jpeg");
+}
+.img-source:nth-child(9) {
+  background-image: url("assets/student-9.jpeg");
+}
+
+.img-source > figcaption {
+  background-color: rgb(235, 227, 227);
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.img-source > i {
+  color: green;
+  font-size: 2.5rem;
+}
+
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: black;
+}
+
+footer > button {
+  background: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  align-items: center;
+}
+
+footer > button:last-child {
+  background: red;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 85vw;
+  }
+}
